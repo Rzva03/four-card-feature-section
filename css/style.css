@@ -7,17 +7,24 @@
   --grayishBlue: hsl(229, 6%, 66%);
   --veryGray: hsl(0, 0%, 98%);
 }
+.box-shadow {
+}
+.margin-left {
+  margin-left: 2rem;
+}
 body {
   font-family: "Poppins", sans-serif;
   width: 100vw;
 }
+/****Main container****/
 .container {
   display: flex;
   flex-direction: column;
-  width: 90vw;
+  width: 85vw;
   margin-left: auto;
   margin-right: auto;
 }
+/****Title****/
 .container-title {
   width: 100%;
 }
@@ -25,6 +32,7 @@ body {
   font-size: 1.8rem;
   text-align: initial;
   color: var(--grayishBlue);
+  line-height: 2rem;
 }
 .bold-title {
   font-weight: bold;
@@ -37,9 +45,10 @@ body {
 .container-title__paragraph {
   text-align: center;
   color: var(--grayishBlue);
+  margin-bottom: 20%;
 }
-.container-supervisor {
-  border-top: 0.4rem solid var(--cyan);
+/****Box Container****/
+.container-section {
   border-radius: 3%;
   -webkit-border-radius: 3%;
   -moz-border-radius: 3%;
@@ -47,4 +56,31 @@ body {
   -o-border-radius: 3%;
   width: 100%;
   box-shadow: -0.1rem 1rem 1rem 0.1rem hsla(234, 12%, 34%, 0.24);
+  margin-bottom: 10%;
+}
+.container-section h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--darkBlue);
+  margin-bottom: 0;
+}
+.container-section p {
+  color: var(--grayishBlue);
+}
+.container-section__img {
+  margin: 1.5rem 0 1.5rem 70%;
+}
+
+/****Supervisor****/
+.supervisor {
+  border-top: 0.4rem solid var(--cyan);
+}
+.team {
+  border-top: 0.4rem solid var(--red);
+}
+.karma {
+  border-top: 0.4rem solid var(--orange);
+}
+.calculator {
+  border-top: 0.4rem solid var(--blue);
 }
