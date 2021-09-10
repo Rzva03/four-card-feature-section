@@ -7,8 +7,6 @@
   --grayishBlue: hsl(229, 6%, 66%);
   --veryGray: hsl(0, 0%, 98%);
 }
-.box-shadow {
-}
 .margin-left {
   margin-left: 2rem;
 }
@@ -47,7 +45,7 @@ body {
   color: var(--grayishBlue);
   margin-bottom: 20%;
 }
-/****Box Container****/
+/****Section Container****/
 .container-section {
   border-radius: 3%;
   -webkit-border-radius: 3%;
@@ -70,17 +68,73 @@ body {
 .container-section__img {
   margin: 1.5rem 0 1.5rem 70%;
 }
-
 /****Supervisor****/
 .supervisor {
   border-top: 0.4rem solid var(--cyan);
 }
+/****Team****/
 .team {
   border-top: 0.4rem solid var(--red);
 }
+/****Karma****/
 .karma {
   border-top: 0.4rem solid var(--orange);
 }
+/****Calculator****/
 .calculator {
   border-top: 0.4rem solid var(--blue);
+}
+
+@media screen and (min-width: 1440px) {
+  /****Main container****/
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /****Title****/
+  .container-title h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 3.5rem;
+    margin-top: 5rem;
+  }
+  .container-title__paragraph {
+    margin-bottom: 10vh;
+    font-size: 1rem;
+  }
+  /****Section Container****/
+  .container-section {
+    width: 25vw;
+    height: 28vh;
+  }
+  /****Box Container****/
+  .container-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  /****Supervisor****/
+  .supervisor {
+    margin-right: 4vw;
+    z-index: -1;
+  }
+  /****Team****/
+  .team {
+    position: relative;
+    margin-top: -5vh;
+  }
+  /****Karma****/
+  .karma {
+    position: relative;
+    margin-top: 25vh;
+    margin-left: -27vw;
+  }
+  /****Calculator****/
+  .calculator {
+    margin-left: 4vw;
+    z-index: 1;
+  }
 }
