@@ -18,7 +18,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 85vw;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -90,9 +90,8 @@ body {
   .container {
     display: flex;
     flex-direction: column;
-    max-width: 80vw;
-    min-width: 75vw;
-    height: 100vh;
+    width: 80%;
+    height: 100%;
   }
   /****Title****/
   .container-title h2 {
@@ -107,8 +106,8 @@ body {
   }
   /****Section Container****/
   .container-section {
-    width: 22vw;
-    height: 30vh;
+    width: 25%;
+    height: 40%;
   }
   .container-section__img {
     width: 2.5rem;
@@ -119,28 +118,29 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-left: 8%;
   }
   /****Supervisor****/
   .supervisor {
-    margin-right: 4vw;
-    margin-top: 10vh;
+    margin-right: 5%;
+    margin-top: 10%;
     z-index: -1;
   }
   /****Team****/
   .team {
     position: relative;
-    margin-top: -5vh;
+    margin-top: -2%;
   }
   /****Karma****/
   .karma {
     position: relative;
-    margin-top: 30vh;
-    margin-left: -22vw;
+    margin-top: 20%;
+    margin-left: -25%;
   }
   /****Calculator****/
   .calculator {
-    margin-left: 4vw;
-    margin-top: 10vh;
+    margin-left: 5%;
+    margin-top: 10%;
     z-index: 1;
   }
 }
