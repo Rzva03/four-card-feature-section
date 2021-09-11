@@ -12,7 +12,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  width: 100vw;
+  width: 100%;
 }
 /****Main container****/
 .container {
@@ -85,21 +85,21 @@ body {
   border-top: 0.4rem solid var(--blue);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   /****Main container****/
   .container {
     display: flex;
     flex-direction: column;
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 80vw;
+    min-width: 75vw;
+    height: 100vh;
   }
   /****Title****/
   .container-title h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
-    line-height: 3.5rem;
-    margin-top: 5rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
   }
   .container-title__paragraph {
     margin-bottom: 10vh;
@@ -107,8 +107,12 @@ body {
   }
   /****Section Container****/
   .container-section {
-    width: 25vw;
-    height: 28vh;
+    width: 22vw;
+    height: 30vh;
+  }
+  .container-section__img {
+    width: 2.5rem;
+    margin-top: 0;
   }
   /****Box Container****/
   .container-box {
@@ -119,6 +123,7 @@ body {
   /****Supervisor****/
   .supervisor {
     margin-right: 4vw;
+    margin-top: 10vh;
     z-index: -1;
   }
   /****Team****/
@@ -129,12 +134,13 @@ body {
   /****Karma****/
   .karma {
     position: relative;
-    margin-top: 25vh;
-    margin-left: -27vw;
+    margin-top: 30vh;
+    margin-left: -22vw;
   }
   /****Calculator****/
   .calculator {
     margin-left: 4vw;
+    margin-top: 10vh;
     z-index: 1;
   }
 }
